@@ -20,9 +20,35 @@
 </head>
 
 <!--apply tailwind css via class-->
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+<body class="p-8 md:p-4 bg-black font-mono text-sm lg:text-base flex flex-col justify-center h-screen">
+    <main class="lg:w-1/4 mx-auto flex flex-col gap-8">
+        <img src="../assets/icon.jpg" class="w-32 h-32 md:w-48 md:h-48 mx-auto
+        outline outline-1 outline-white">
+        <p class="text-white">
+            <span class="text-[rgb(0,140,255)]">I'M LUQMAN</span>, A RELENTLESS TRY HARD POLYMATH
+            WHO LOVES SPARKING CHANGE AND DOING WILDLY 
+            CRAZY THINGS.
+        </p>
+
+        <ol class="list-none text-[rgb(200,200,200)]">
+            <li>- BASED IN KUALA LUMPUR.</li>
+            <li>- HIGH-SCHOOL STUDENT.</li>
+            <li>- HARDCORE RESEARCHER + BOOKWORM.</li>
+            <li>- INTRIGUED AND KNOWLEDGABLE WITH TECHNOLOGY, FINANCE, BUSINES AND POLITICS.</li>
+            <li>- I WRITE CODE AND ARTICLES, DRAW ON PAPERS, DEBATE, AND A COUPLE OTHER THINGS.</li>
+            <li>- I'M @theluqmn ON
+                <a href="https://github.com/theluqmn" target="_blank" class="underline">GITHUB</a>,
+                <a href="https://instagram.com/theluqmn" target="_blank" class="underline">INSTAGRAM</a>,
+                <a href="https://x.com/theluqmn" target="_blank" class="underline">TWITTER</a> AND
+                <a href="mailto:theluqmn@outlook.com" target="_blank" class="underline">OUTLOOK</a>.
+            </li>
+        </ol>
+
+        <div class="flex flex-row justify-between text-white">
+            <a href="{{ site.baseurl }}/adventures"><u>ADVENTURES</u> →</a>
+            <a href="{{ site.baseurl }}/projects"><u>PROJECTS</u> →</a>
+            <a href="{{ site.baseurl }}/dispatch"><u>DISPATCH</u> →</a>
+        </div>
+    </main>
 </body>
 </html>
