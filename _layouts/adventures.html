@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="lang-en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luqman's Adventures</title>
+
+    <!--open graph-->
+    <meta property="og:title" content="Luqman's Adventures" />
+    <meta property="og:description" content="A collection of my craziest adventures yet." />
+
+    <!--ibm plex mono font-->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
+
+    <!--tailwind css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { mono: ['"IBM Plex Mono"', 'monospace'] } } } }
+    </script>
+</head>
+
+<!--apply tailwind css via class-->
+<body class="p-8 md:p-4 bg-black font-mono text-sm lg:text-base flex flex-col justify-center h-screen">
+    <main class="lg:w-1/4 mx-auto flex flex-col gap-6">
+        <a href="{{ site.baseurl }}" class="text-white">← <u>RETURN TO I'M LUQMAN</u></a>
+
+        <p class="text-white">
+            I'VE HAD COUNTLESS OF <span class="text-[rgb(0,140,255)]">ADVENTURES</span> THROUGHOUT MY LIFE, HERE IS
+            SOME OF THE CRAZIEST ONES:
+        </p>
+
+        <ol class="list-none flex flex-col gap-6 text-[rgb(200,200,200)]">
+            <li>- <b>ATTENDING THE ASEAN TECH SUMMIT 2025 WITH MY FRIEND</b>, WE'RE THE YOUNGEST PARTICIPANTS.</li>
+            <li>- <b>WINNING 2ND PLACE AT THE NATIONAL AQUAPONICS COMPETITION 2025</b> WITH MY BATCHMATES.</li>
+            <li>- <b>WINNING 1ST PLACE (PLATINUM-CERTIFIED) AT PUICE 2025</b> WITH MY FRIENDS - "HIGHEST IMPACT PROJECT".</li>
+            <li>- <b>INTERVIEWING DR DAVID HILLSON ON THE TOPIC OF RISK MANAGEMENT</b>, A FIELD WHICH HE PIONEERED.</li>
+            <li>- <b>TEACHING A GROUP OF JUNIORS</b> ON HOW TO BUILD WEBSITES FROM SCRATCH.</li>
+            <li>- <b>BUILDING WATER ROCKETS</b> THAT FLEW TOO FAR AND NEVER LEFT THE GROUND.</li>
+        </ol>
+    </main>
+</body>
+</html>
