@@ -1,3 +1,4 @@
 ---
 layout: adventures
+permalink: /adventures
 ---
