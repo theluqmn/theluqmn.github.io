@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="lang-en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luqman's Projects</title>
+
+    <!--open graph-->
+    <meta property="og:title" content="Luqman's Projects" />
+    <meta property="og:description" content="Things that I have worked on." />
+
+    <!--ibm plex mono font-->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
+
+    <!--tailwind css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { mono: ['"IBM Plex Mono"', 'monospace'] } } } }
+    </script>
+</head>
+
+<!--apply tailwind css via class-->
+<body class="p-8 md:p-4 bg-black font-mono text-sm lg:text-base flex flex-col justify-center h-screen">
+    <main class="lg:w-1/4 mx-auto flex flex-col gap-6">
+        <a href="{{ site.baseurl }}" class="text-white">← <u>RETURN TO I'M LUQMAN</u></a>
+
+        <p class="text-white">
+            I'VE WORKED ON PLENTY OF 
+            <span class="text-[rgb(0,140,255)]">PROJECTS</span>,
+            HERE'S SOME NOTABLE ONES:
+        </p>
+
+        <div class="
+        space-y-4
+        text-[rgb(200,200,200)]
+        [&_a]:underline [&_b]:text-white
+        ">
+            {{ content }}
+        </div>
+    </main>
+</body>
+</html>
