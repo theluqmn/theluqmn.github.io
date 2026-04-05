@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="lang-en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include head.html %}
+
     <title>Luqman's Projects</title>
 
     <!--open graph-->
     <meta property="og:title" content="Luqman's Projects" />
     <meta property="og:description" content="Things that I have worked on." />
-
-    {% include head.html %}
 </head>
 
 <!--apply tailwind css via class-->
 <body class="p-8 md:p-4 bg-black font-mono text-sm lg:text-base flex flex-col justify-center h-screen">
     <main class="lg:w-1/4 mx-auto flex flex-col gap-6">
-        <a href="{{ site.baseurl }}" class="text-white">← <u>RETURN TO I'M LUQMAN</u></a>
+        <a href="{{ site.url }}" class="text-white">← <u>RETURN TO I'M LUQMAN</u></a>
 
         <p class="text-white">
             I'VE WORKED ON PLENTY OF 

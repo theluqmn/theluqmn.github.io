@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="lang-en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include head.html %}
+
     <title>Luqman</title>
 
     <!--open graph-->
     <meta property="og:title" content="Luqman" />
     <meta property="og:description" content="Luqman's little corner of the internet." />
-
-    {% include head.html %}
 </head>
 
 <!--apply tailwind css via class-->
@@ -38,9 +36,9 @@
         </ol>
 
         <div class="flex flex-row justify-between text-white">
-            <a href="{{ site.baseurl }}/adventures"><u>ADVENTURES</u> →</a>
-            <a href="{{ site.baseurl }}/projects"><u>PROJECTS</u> →</a>
-            <a href="{{ site.baseurl }}/dispatch"><u>DISPATCH</u> →</a>
+            <a href="{{ site.url }}/adventures"><u>ADVENTURES</u> →</a>
+            <a href="{{ site.url }}/projects"><u>PROJECTS</u> →</a>
+            <a href="{{ site.url }}/dispatch"><u>DISPATCH</u> →</a>
         </div>
     </main>
 </body>
